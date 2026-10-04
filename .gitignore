@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/.cache/
+/.eslintcache
+*.tsbuildinfo
 
 # next.js
 /.next/

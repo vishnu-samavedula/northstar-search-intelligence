@@ -34,6 +34,17 @@ npm run lint
 
 The hosted Site is private. The storefront and checkout are demonstrations only; no payment is processed.
 
+## Repository scope
+
+The repository is intentionally centered on the POC:
+
+- `app/` — Northstar storefront, catalog, search, assistant, cart, and checkout
+- `public/catalog/products/` — the 24 product images used by the demo
+- `components/ui/` — only the three UI primitives used by the storefront
+- `PROJECT.md` and `RUNBOOK.md` — product POV and operating plan
+
+The smaller `build/`, `scripts/`, `lib/`, `vendor/`, and configuration surfaces are retained because Vinext and Sites use them to preview, build, and publish the application. Generated dependencies and runtime state—including `node_modules`, `dist`, `.vite`, `.vinext`, `.wrangler`, and local environment files—are excluded by `.gitignore`.
+
 ## License
 
 Released under the [MIT License](./LICENSE).

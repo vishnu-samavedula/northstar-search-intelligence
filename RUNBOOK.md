@@ -72,6 +72,8 @@ Do not present current search or chat behavior as Liquid model inference. The mo
 | Product media | `public/catalog/products/` | One optimized image per product |
 | Hosting | `.openai/hosting.json` | Existing private Sites project |
 
+The tracked `build/`, `scripts/`, `lib/`, and `vendor/` files are the minimal Vinext/Sites infrastructure required for preview and deployment. Unused starter examples and UI components are intentionally excluded.
+
 ## 7. Model-integration seam
 
 Do not call a model directly from the browser or expose provider keys in client code. Add server-side endpoints or actions behind a small provider interface.
