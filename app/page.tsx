@@ -28,12 +28,12 @@ const raw = [
   ["daypack-18","Daypack 18L","Backpacks",92,"A compact everyday pack with padded laptop storage.","Recycled ballistic nylon","Black,Cobalt","18L","laptop,commute,travel,water resistant","/catalog/products/daypack-18.jpg","50% 50%","Bestseller"],
   ["weekender-28","Weekender 28L","Backpacks",128,"Clamshell packing and room for a two-night trip.","Recycled ripstop","Black,Slate","28L","weekend,travel,carry on,laptop","/catalog/products/weekender-28.jpg","50% 50%"],
   ["trail-pack","Trail Pack 22L","Backpacks",116,"Ventilated back panel and hydration-compatible storage.","Water-resistant ripstop","Graphite,Blue","22L","hiking,outdoor,water resistant,light","/catalog/products/trail-pack.jpg","50% 50%"],
-  ["card-fold","Card Fold Wallet","Wallets",46,"Slim six-card wallet with a center cash slot.","Full-grain leather","Cobalt,Black,Tan","One size","slim,leather,cards,minimal","/catalog/accessories.png","34% 82%","New"],
-  ["zip-wallet","Zip Wallet","Wallets",58,"Compact zip-around wallet for cards, cash, and coins.","Pebbled leather","Black,Stone","One size","zip,coin,compact,secure","/catalog/accessories.png","38% 78%"],
-  ["transit-wallet","Transit Wallet","Wallets",32,"Durable everyday wallet with a quick-access card slot.","Recycled technical fabric","Black,Navy","One size","travel,durable,cards,lightweight","/catalog/accessories.png","36% 82%"],
-  ["north-01","North 01 Eau de Parfum","Fragrance",68,"Crisp cedar, mineral air, and soft white musk.","50 ml eau de parfum","50 ml","50 ml","fresh,woody,clean,unisex","/catalog/accessories.png","57% 84%","Bestseller"],
-  ["after-rain","After Rain Eau de Parfum","Fragrance",72,"Wet stone, violet leaf, and grounded vetiver.","50 ml eau de parfum","50 ml","50 ml","rain,green,earthy,unisex","/catalog/accessories.png","57% 82%"],
-  ["soft-hours","Soft Hours Eau de Parfum","Fragrance",72,"Warm amber, skin musk, and a trace of vanilla.","50 ml eau de parfum","50 ml","50 ml","warm,amber,vanilla,evening","/catalog/accessories.png","58% 80%"],
+  ["card-fold","Card Fold Wallet","Wallets",46,"Slim six-card wallet with a center cash slot.","Full-grain leather","Cobalt,Black,Tan","One size","slim,leather,cards,minimal","/catalog/products/card-fold.jpg","50% 50%","New"],
+  ["zip-wallet","Zip Wallet","Wallets",58,"Compact zip-around wallet for cards, cash, and coins.","Pebbled leather","Black,Stone","One size","zip,coin,compact,secure","/catalog/products/zip-wallet.jpg","50% 50%"],
+  ["transit-wallet","Transit Wallet","Wallets",32,"Durable everyday wallet with a quick-access card slot.","Recycled technical fabric","Black,Navy","One size","travel,durable,cards,lightweight","/catalog/products/transit-wallet.jpg","50% 50%"],
+  ["north-01","North 01 Eau de Parfum","Fragrance",68,"Crisp cedar, mineral air, and soft white musk.","50 ml eau de parfum","50 ml","50 ml","fresh,woody,clean,unisex","/catalog/products/north-01.jpg","50% 50%","Bestseller"],
+  ["after-rain","After Rain Eau de Parfum","Fragrance",72,"Wet stone, violet leaf, and grounded vetiver.","50 ml eau de parfum","50 ml","50 ml","rain,green,earthy,unisex","/catalog/products/after-rain.jpg","50% 50%"],
+  ["soft-hours","Soft Hours Eau de Parfum","Fragrance",72,"Warm amber, skin musk, and a trace of vanilla.","50 ml eau de parfum","50 ml","50 ml","warm,amber,vanilla,evening","/catalog/products/soft-hours.jpg","50% 50%"],
 ] as const;
 
 const PRODUCTS:Product[] = raw.map(p => ({ id:p[0],name:p[1],category:p[2],price:p[3],description:p[4],material:p[5],colors:p[6].split(","),sizes:p[7].split(","),tags:p[8].split(","),image:p[9],position:p[10],badge:p[11] }));
